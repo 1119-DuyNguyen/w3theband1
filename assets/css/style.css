@@ -150,7 +150,7 @@ cursor: pointer;
     position:relative;
 margin-top: 46px;
 padding-top: 50%;
-background: url("/assets/image/sileder1-chicago.jpg") top center / cover no-repeat;
+background: url("assets/image/sileder1-chicago.jpg") top center / cover no-repeat;
 
 }
 
