@@ -4,8 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    overflow: hidden;
 }
 /*
 1.vị trí
@@ -24,11 +28,15 @@ html{
     display: inline-block;
     margin-top:15px;
     cursor:pointer;
-    
+    text-align: center;
+
     padding: 12px 16px;
     border:none;
     
     }
+#tour-section .btn{
+    width: 100%;
+}    
 .btn:hover{
         background-color: #ccc;
         color: black;
@@ -48,11 +56,14 @@ html{
 .mt16{
     margin-top: 16px;
 }
+.pd32{
+    margin-top: 32px;
+}
 .row{
     overflow: hidden;
     margin-left: -8px;
     margin-right: -8px;
-    padding: 32px 0px;
+    padding: 16px 0px;
  
 }
 .col{
@@ -81,6 +92,7 @@ top:0;
 left:0;
 right:0;
 z-index: 1;
+
 }
 #nav{ display:inline-block;}
 #nav,.subnav{
@@ -103,7 +115,7 @@ z-index: 1;
 #nav li a{
 
     text-decoration: none;
-  
+  line-height: 48px;
    
     display: block;
     /*cách 2 : padding :12px 24px*/
@@ -127,7 +139,7 @@ color:#000;
     color: #000;
 
 
-    line-height: 38px;
+    line-height: 48px;
     padding: 0 16px;
 }
 #nav li:hover .subnav{
@@ -136,11 +148,22 @@ display: block;
 #nav .nav-arrow-down{
     font-size: 10px;
 }
+#header #mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header #mobile-menu,
 #header .searchButton{
     color: #fff;
     float:right;
     line-height: 46px;
     padding:0px 21px; 
+}
+
+#header #mobile-menu:hover{
+background-color: #ccc;
+color: #000;
 }
 #header .searchButton:hover{
 background-color: #f44336;
@@ -150,7 +173,8 @@ cursor: pointer;
     position:relative;
 margin-top: 46px;
 padding-top: 50%;
-background: url('/assets/image/slider1_chicago.jpg') top center / cover no-repeat;
+
+background: url("../image/slider1_chicago.jpg") top center / cover no-repeat;
 
 }
 
@@ -181,11 +205,11 @@ background: url('/assets/image/slider1_chicago.jpg') top center / cover no-repea
 }
 #content .content-section{
     width: 800px;
-   
+   max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 64px;
-   
+   padding: 0px 16px;
 
 }
 #content .section-heading{
@@ -193,6 +217,7 @@ background: url('/assets/image/slider1_chicago.jpg') top center / cover no-repea
     text-align: center;
     font-weight: 400;
     letter-spacing: 4px;
+    padding-top: 64px;
 }
 #content .section-sub-heading{
     margin-top: 25px;
@@ -219,9 +244,9 @@ background: url('/assets/image/slider1_chicago.jpg') top center / cover no-repea
     border-radius: 4px;
 }
 /*tour section*/
-#content .tour-section{
+#content #tour-section{
     background: #000;
-    padding:64px 0;
+    padding-bottom: 64px;
     margin-top:64px;
 }
 .tickets-lists{
@@ -260,6 +285,7 @@ background: url('/assets/image/slider1_chicago.jpg') top center / cover no-repea
 .place-img:hover{
     opacity: 0.6;
 }
+
 .place-body{
     font-size:15px;
     padding:16px;
@@ -394,13 +420,23 @@ margin: 16px 0;
 }
 .contact-info {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 2;
     display:block;
     font-weight: 600;
 }
 .contact-info i{
 width:30px;
 display:inline-block;
+}
+.contact-info a 
+{
+    color :rgb(0, 0, 238);
+    opacity: 0.8;
+}
+.contact-info a:hover
+{
+   
+    opacity: 1;
 }
 .contact-form{
     font-size: 15px;
@@ -426,7 +462,8 @@ color: #000;
 
 #footer .social-list>a{
     color: rgba(0, 0, 0, 0.6);
-    font-size: 24px;
+    font-size: 40px;
+    margin: 0px 16px;
     text-decoration: none;
 }
 #footer .copyright {
@@ -437,4 +474,6 @@ color: #000;
 #footer .copyright a:hover,
 #footer .social-list a:hover{
     color: rgba(0, 0, 0, 0.3);
+
+  
 }
