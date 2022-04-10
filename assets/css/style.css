@@ -1,16 +1,18 @@
 /*reset css*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
-#main{
+
+#main {
     overflow: hidden;
 }
+
 /*
 1.vị trí
 2.kích thước(width,height)
@@ -18,257 +20,294 @@ html{
 4.kiểu dáng(font,tròn,vuông)
 */
 /*common*/
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
-.btn{
+
+.btn {
     background-color: #000;
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    margin-top:15px;
-    cursor:pointer;
+    margin-top: 15px;
+    cursor: pointer;
     text-align: center;
 
     padding: 12px 16px;
-    border:none;
-    
-    }
-#tour-section .btn{
+    border: none;
+
+}
+
+#tour-section .btn {
     width: 100%;
-}    
-.btn:hover{
-        background-color: #ccc;
-        color: black;
-    }
-    .pull-right{
-        float: right !important;
-    }
-.text-white{
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.text-white {
     color: #fff !important;
 }
-.text-center{
+
+.text-center {
     text-align: center !important;
 }
-.mt8{
+
+.mt8 {
     margin-top: 8px;
 }
-.mt16{
+
+.mt16 {
     margin-top: 16px;
 }
-.pd32{
+
+.pd32 {
     margin-top: 32px;
 }
-.row{
+
+.row {
     overflow: hidden;
     margin-left: -8px;
     margin-right: -8px;
     padding: 16px 0px;
- 
+
 }
-.col{
+
+.col {
     float: left;
-    padding:0px 8px ;
+    padding: 0px 8px;
 }
-.col-full{
-    width:100%;
+
+.col-full {
+    width: 100%;
 }
-.col-third{
-    width:33.3333%;
+
+.col-third {
+    width: 33.3333%;
 }
-.col-half{
-    width:50%;
+
+.col-half {
+    width: 50%;
 }
+
 /*Main*/
-#main{
+#main {}
+
+#header {
+    position: fixed;
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 
 }
 
-#header{
-    position:fixed;
-height: 46px;
-background-color: #000;
-top:0;
-left:0;
-right:0;
-z-index: 1;
-
-}
-#nav{ display:inline-block;}
-#nav,.subnav{
-    list-style-type: none;
-}
-#nav >li{
+#nav {
     display: inline-block;
 }
-#nav li{
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
 
     position: relative;
 }
 
-#nav>li>a{
+#nav>li>a {
     line-height: 46px;
     color: #fff;
     padding: 0 24px;
     text-transform: uppercase;
 }
-#nav li a{
+
+#nav li a {
 
     text-decoration: none;
-  line-height: 48px;
-   
+    line-height: 48px;
+
     display: block;
     /*cách 2 : padding :12px 24px*/
 }
+
 #nav .subnav li:hover a,
-#nav >li:hover> a{
-  
-background-color: #ccc;
-color:#000;
+#nav>li:hover>a {
+
+    background-color: #ccc;
+    color: #000;
 }
 
-#nav .subnav{
+#nav .subnav {
     background-color: #fff;
-      display: none;  
-     position: absolute;
-     min-width: 160px;
-    top : 100%;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#nav .subnav a{
+
+#nav .subnav a {
     color: #000;
 
 
     line-height: 48px;
     padding: 0 16px;
 }
-#nav li:hover .subnav{
-display: block;
+
+#nav li:hover .subnav {
+    display: block;
 }
-#nav .nav-arrow-down{
+
+#nav .nav-arrow-down {
     font-size: 10px;
 }
-#header #mobile-menu{
+
+#header #mobile-menu {
     position: absolute;
     top: 0;
     right: 0;
 }
+
 #header #mobile-menu,
-#header .searchButton{
+#header .searchButton {
     color: #fff;
-    float:right;
+    float: right;
     line-height: 46px;
-    padding:0px 21px; 
+    padding: 0px 21px;
 }
 
-#header #mobile-menu:hover{
-background-color: #ccc;
-color: #000;
+#header #mobile-menu:hover {
+    background-color: #ccc;
+    color: #000;
 }
-#header .searchButton:hover{
-background-color: #f44336;
-cursor: pointer;
-}
-#slider{
-    position:relative;
-margin-top: 46px;
-padding-top: 50%;
-<<<<<<< HEAD
 
-=======
->>>>>>> c9f99773ab00618cb096955b9182a36fc1c4367f
-background: url("../image/slider1_chicago.jpg") top center / cover no-repeat;
+#header .searchButton:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url("../image/slider1_chicago.jpg") top center / cover no-repeat;
 
 }
 
-#slider .textcontent{
-  position:absolute;
-  bottom: 48px;
+#slider .textcontent {
+    position: absolute;
+    bottom: 48px;
 
-   color: #fff;
-   
- text-align: center;
- width: 100%;
- /* left:50%;
+    color: #fff;
+
+    text-align: center;
+    width: 100%;
+    /* left:50%;
  transform: translateX(-50%); */
 }
-#slider .text-heading{
+
+#slider .text-heading {
     font-weight: 500;
     font-size: 24px;
-   
+
 }
-#slider .text-description{
+
+#slider .text-description {
     font-size: 15px;
     font-weight: bold;
     margin-top: 25px;
+    text-shadow: 0 0 2px #000;
 
 }
-#content{
 
-}
-#content .content-section{
+#content {}
+
+#content .content-section {
     width: 800px;
-   max-width: 100%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 64px;
-   padding: 0px 16px;
+    padding: 0px 16px;
 
 }
-#content .section-heading{
+
+#content .section-heading {
     font-size: 30px;
     text-align: center;
     font-weight: 400;
     letter-spacing: 4px;
     padding-top: 64px;
 }
-#content .section-sub-heading{
+
+#content .section-sub-heading {
     margin-top: 25px;
     font-size: 15px;
     text-align: center;
     font-style: italic;
     opacity: 0.6;
 }
-#content .about-text{
- margin: 30px 0;
- font-size: 15px;
- text-align: justify;
- line-height: 1.4;
-}
 
-
-#content .member-name{
+#content .about-text {
+    margin: 30px 0;
     font-size: 15px;
-   
+    text-align: justify;
+    line-height: 1.4;
 }
-#content .member-image{
-    width:154px;
+
+
+#content .member-name {
+    font-size: 15px;
+
+}
+
+#content .member-image {
+    width: 154px;
     margin-top: 15px;
     border-radius: 4px;
 }
+
 /*tour section*/
-#content #tour-section{
+#content #tour-section {
     background: #000;
     padding-bottom: 64px;
-    margin-top:64px;
+    margin-top: 64px;
 }
-.tickets-lists{
+
+.tickets-lists {
     background-color: #fff;
     margin-top: 40px;
-  
+
 }
-.tickets-lists li{
-    font-size:  15px;
+
+.tickets-lists li {
+    font-size: 15px;
     padding: 11px 16px;
     border-bottom: 1px solid #ccc;
 }
-.tickets-lists .sold-out{
+
+.tickets-lists .sold-out {
     background-color: #f44336;
-    padding:3px 8px;
+    padding: 3px 8px;
     color: #fff;
     margin-left: 16px;
 }
-.tickets-lists .quantity{
+
+.tickets-lists .quantity {
     width: 24px;
     height: 24px;
     float: right;
@@ -281,75 +320,84 @@ background: url("../image/slider1_chicago.jpg") top center / cover no-repeat;
 }
 
 
-.place-img{
+.place-img {
     width: 100%;
-   display: block;
+    display: block;
 }
-.place-img:hover{
+
+.place-img:hover {
     opacity: 0.6;
 }
 
-.place-body{
-    font-size:15px;
-    padding:16px;
+.place-body {
+    font-size: 15px;
+    padding: 16px;
     background-color: #fff;
-    
+
 }
-.place-heading{
-    font-size:15px;
+
+.place-heading {
+    font-size: 15px;
 }
-.place-timeline{
-    margin-top:15px;
+
+.place-timeline {
+    margin-top: 15px;
     opacity: 0.6;
 }
-.place-descript{
-    margin-top:15px;line-height: 1.4;}
+
+.place-descript {
+    margin-top: 15px;
+    line-height: 1.4;
+}
 
 /*Footer section*/
 
-#footer{
+#footer {}
 
-}
 /* để mở modal :flex*/
-.modal.open{
+.modal.open {
     display: flex;
 }
-.modal
-{
-position:fixed;
-background-color:rgba(0, 0, 0, 0.4);
 
-right: 0;
-left: 0;
-top: 0;
-bottom: 0;
-display:none;
-align-items: center;
-justify-content: center;
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }
-.modal-container{
+
+.modal-container {
     position: relative;
-background-color: #fff;
-width: 900px;
-min-height: 200px;
-max-width: calc(100% - 32px);
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
 
-animation: modalFadeIn ease 0.5s;
+    animation: modalFadeIn ease 0.5s;
 }
-.modal-close{
+
+.modal-close {
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     padding: 16px;
     cursor: pointer;
     color: #fff;
 }
-.modal-close:hover{
+
+.modal-close:hover {
     background-color: #ccc;
     opacity: 0.8;
     color: #000;
 }
-.modal-header{
+
+.modal-header {
     width: 100%;
     height: 130px;
     background-color: #009688;
@@ -360,126 +408,137 @@ animation: modalFadeIn ease 0.5s;
     letter-spacing: 4px;
     font-size: 30px;
 }
-.modal .modal-heading-icon{
+
+.modal .modal-heading-icon {
     margin-right: 16px;
 }
-.modal-body{
+
+.modal-body {
 
     padding: 0 16px;
 }
-.modal-input{
+
+.modal-input {
     padding: 8px;
-    width:100%;
+    width: 100%;
     margin-top: 12px;
     border: 1px solid #ccc;
 }
-.modal-label{
-    display:block;
+
+.modal-label {
+    display: block;
     font-size: 15px;
     line-height: 1.4;
     margin-top: 30px;
     font-weight: bold;
 }
-#buy-tickets{
+
+#buy-tickets {
     font-size: 20px;
     border-style: none;
-padding: 16px;
-width: 100%;
-background-color: #009688;
-color: #fff;
-text-transform: uppercase;
-font-weight: 5fvg00;
-margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 5fvg00;
+    margin: 16px 0;
 
 }
-#buy-tickets:hover{
+
+#buy-tickets:hover {
     background-color: #ccc;
     cursor: pointer;
     color: black;
 }
-.modal-help{
-   font-size: 20px;
+
+.modal-help {
+    font-size: 20px;
 
     margin: 15px 0;
-  text-align: right;
+    text-align: right;
 }
-.modal-help a{
+
+.modal-help a {
     color: #2196F3;
     text-decoration: none;
 }
 
 @keyframes modalFadeIn {
-    from
-    {
+    from {
         transform: translateY(-100px);
         opacity: 0;
     }
 
-    to
-    {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 .contact-info {
     font-size: 16px;
     line-height: 2;
-    display:block;
+    display: block;
     font-weight: 600;
 }
-.contact-info i{
-width:30px;
-display:inline-block;
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
 }
-.contact-info a 
-{
-    color :rgb(0, 0, 238);
+
+.contact-info a {
+    color: rgb(0, 0, 238);
     opacity: 0.8;
 }
-.contact-info a:hover
-{
-   
+
+.contact-info a:hover {
+
     opacity: 1;
 }
-.contact-form{
+
+.contact-form {
     font-size: 15px;
 }
+
 .contact-form .form-control {
 
-  border: 1px solid #ccc;
+    border: 1px solid #ccc;
     padding: 12px;
     width: 100%;
 }
 
-.contact-form .form-submit:hover{
-background-color: #ccc;
-color: #000;
+.contact-form .form-submit:hover {
+    background-color: #ccc;
+    color: #000;
 }
-.map-section img{
-    width:100%;
+
+.map-section img {
+    width: 100%;
 }
-#footer{
+
+#footer {
     padding: 64px 16px;
     text-align: center;
 }
 
-#footer .social-list>a{
+#footer .social-list>a {
     color: rgba(0, 0, 0, 0.6);
     font-size: 40px;
     margin: 0px 16px;
     text-decoration: none;
 }
+
 #footer .copyright {
     color: rgba(0, 0, 0, 0.6);
     margin-top: 16px;
     font-size: 15px;
 }
-#footer .copyright a:hover,
-#footer .social-list a:hover{
-    color: rgba(0, 0, 0, 0.3);
-<<<<<<< HEAD
 
-  
-=======
->>>>>>> c9f99773ab00618cb096955b9182a36fc1c4367f
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+
+
 }

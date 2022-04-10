@@ -1,11 +1,16 @@
+/*Thiết kế web : 
+Pc(>=1024)
+-> tablet (ipad)-(740<=x<=1023) 
+-> mobile(<=730)
+*/
 /*PC*/
-@media (min-width: 1024px)
+@media (min-width:64em)
 {}
 /*tablet*/
-@media (min-width: 740px) and (max-width: 1023px)
+@media (min-width: 46.25em) and (max-width: 63.9375em)
 {}
 /*tablet+ mobile*/
-@media (max-width: 1023px)
+@media (max-width: 63.9375em)
 {
 
 .btn{
@@ -20,16 +25,17 @@ padding : 16px;
     text-decoration: none;
     margin: 0 8px;
     padding : 12px 0;
+    width: 10%;
     display: inline-block;
 }
 }
-@media (min-width: 740px){
+@media (min-width: 46.25em){
     #header .searchMobile{
         display: none;
     }
 }
 /*mobile*/
-@media (max-width: 740px){
+@media (max-width: 46.1875em){
     #nav{
         display: block;
     }

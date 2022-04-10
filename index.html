@@ -20,8 +20,8 @@
             <li><a href="#theBand">Band</a></li>
             <li><a href="#tour-section">Tour</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li>
-                <a href="#">
+            <li >
+                <a href="#" name="M" >
                     More
                     <i  class="nav-arrow-down ti-angle-down"></i>
                 </a>
@@ -264,17 +264,19 @@
         }
 
         /* close menu when select menu -mobile*/
-        var menuItems= document.querySelectorAll("#nav li a[href*='#']");
-     for(let i=0;i<menuItems.length;++i){
+       // var menuItems= document.querySelectorAll("#nav li a[href*='#']");
+        var menuItems= document.querySelectorAll("#nav>li>a");
+        console.log( menuItems);
+        for(let i=0;i<menuItems.length;++i){
          var menuItem= menuItems[i];
-
+        
          menuItem.onclick= function(event){
-
-        var isParentMenu= menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
-             if(isParentMenu)
-            { event.preventDefault();}
+          
+         var isParentMenu= this.nextElementSibling&&this.nextElementSibling.classList.contains("subnav");
+            if(isParentMenu)
+             { event.preventDefault();}
             
-             else  {header.style.height=null;}
+              else  {header.style.height=null;}
           
             }
      }
